@@ -2,14 +2,30 @@ nav>ul>li {
     display: inline;
 }
 
+/* So, nav>ul>li means: */
+/* "Select all <li> elements that are direct children of a <ul> element, which itself is a direct child of a <nav> element." */
+
 nav li>a {
     text-decoration: none;
 }
+
+/* So, nav li>a means: */
+/* "Select all <a> elements that are direct children of <li> elements inside a <nav> element." */
 
 footer {
     text-align: center;
 }
 
+footer>p>a {
+    text-decoration: none;
+}
+
+/* If the text under the "river" tag is wrapped in an anchor (<a>) tag or another element, you can target it and remove the underline like this: */
+
 main {
     padding-left: 20px;
+}
+
+#allign {
+    text-align: justify;
 }
